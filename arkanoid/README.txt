@@ -5,7 +5,7 @@
 2. In the main dir execute: mkdir build && cd build && Xcopy /E /I ..\data data
 3. Copy SFML libs into build dir (.dll)
 4. In the build dir execute:
-   cmake .. -G"MinGW Makefiles"
+   cmake .. -G"MinGW Makefiles" -DCMAKE_BUILD_TYPE=Release
    cmake --build .
    Arkanoid.exe
 
@@ -15,6 +15,6 @@
 1. Install SFML libs: sudo apt-get install libsfml-dev
 2. In the main dir execute: mkdir build && cd build && cp -R ../data data
 3. In the build dir execute:
-   cmake ..
+   cmake .. -DCMAKE_BUILD_TYPE=Release
    make
    ./Arkanoid
